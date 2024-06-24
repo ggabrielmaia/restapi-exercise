@@ -2,14 +2,14 @@
 
 ## Setup
 
-Nessa aplicação, usaremos o framework Nest.js, sendo necessário garantir que o mesmo esteja instalado, mais algumas bibliotecas que o acompanham. 
+Nessa aplicação, usaremos TypeScript juntamente com o framework Nest.js, sendo necessário garantir que os mesmos estejam instalados, mais algumas bibliotecas que o acompanham. 
 
-Para isso, usaremos o gerenciador de pacotes NPM:
+Para isso, usaremos o gerenciador de pacotes NPM. Entre no diretório ```.\restapi-exercise\``` e rode o comando abaixo para instalar as dependências:
 
 ```bash
 npm install
 ```
-Tenha certeza que todas as dependências foram devidamente instaladas.
+Tenha certeza que todas os pacotes foram devidamente instalados.
 
 Após instalar as dependências, mude as credenciais no arquivo .env para as de um banco de dados postgresSQL local que você terá que criar:
 
@@ -117,3 +117,13 @@ Fazer login:
 Verifique a resposta de login:
 
 A resposta deve incluir um token JWT, que pode ser usado para autenticar outras requisições.
+
+## Testes unitários
+
+Também foi criado testes unitários para cada operação CRUD, usando o Jest. É possível rodar esses testes entrando na pasta ```.\graphql-exercise\``` e rodando o comando:
+
+```bash
+npm run test
+```
+
+Também é possível rodar os comandos```npm run test:watch``` e ```npm run test:cov``` para maior precisão e análise.
